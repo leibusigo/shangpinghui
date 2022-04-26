@@ -1,9 +1,9 @@
-## 1)要求
+## 1. 要求
 1.1：每一天老师书写代码务必三遍
 1.2:node + webpack + VScode + 谷歌浏览器 + git
 1.3:数组的方法 + promise + await + async + 模块化........
 
-## 2)脚手架使用
+## 2. 脚手架使用
 2: vue init webpack 项目的名字
 3|4：vue create 项目名称
 脚手架目录:public + assets文件夹区别
@@ -18,7 +18,7 @@ src：程序员源代码文件夹
         package.json：看到项目描述、项目依赖、项目运行指令
         README.md:项目说明文件
 
-## 3)脚手架下载下来的项目稍微配置一下
+## 3. 脚手架下载下来的项目稍微配置一下
 3.1:浏览器自动打开
 
 ```json
@@ -56,7 +56,7 @@ module.exports = {
 }
 ```
 
-## 4)项目上传GIT
+## 4. 项目上传GIT
 微信小程序实战课的时候，会带着大家玩耍的
 注意:前面基础课程当中，创建分支、处理冲突等等
 https://gitee.com/jch1011/shangpinhui_0607.git
@@ -66,7 +66,7 @@ https://gitee.com/jch1011/shangpinhui_0607.git
 
 
 
-## 5）路由的配置
+## 5. 路由的配置
 vue-router
 路由分为KV
 
@@ -99,7 +99,7 @@ V即为相应的路由组件
 
 
 
-## 6)创建非路由组件（2个：Header、Footer）
+## 6. 创建非路由组件（2个：Header、Footer）
 
 非路由组件使用分为几步:
 第一步：定义
@@ -124,7 +124,7 @@ V即为相应的路由组件
 
 
 
-## 7)路由的跳转
+## 7. 路由的跳转
 路由的跳转就两种形式：声明式导航（router-link：务必要有to属性）
                     编程式导航push||replace
 编程式导航更好用：因为可以书写自己的业务逻辑
@@ -146,13 +146,13 @@ v-if：通过元素上树与下树进行操作
 - $route：一般获取路由信息【路径、query、params等】
 - $router：一般进行编程式导航进行路由跳转【push|replace】
 
-## 8)首页|搜索底部是有Footer组件，而登录注册是没有Footer组件
+## 8. 首页|搜索底部是有Footer组件，而登录注册是没有Footer组件
 Footer组件显示|隐藏，选择v-show|v-if
 路由元信息 meta，设置的属性会添加到$router里,通过路由元信息，判断显示/隐藏
 
 
 
-## 9)路由传参
+## 9. 路由传参
 params参数：路由需要占位，程序就崩了，属于URL当中一部分
 query参数：路由不需要占位，写法类似于ajax当中query参数
 `this.$router.push({name:'search',params:{keyword:this.keyword},query:{k:this.keyword.toUpperCase()}})`
