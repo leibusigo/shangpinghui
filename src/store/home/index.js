@@ -26,6 +26,7 @@ const mutations = {
 };
 //actions:可以处理dispatch派发action地方，这里可以书写你的业务逻辑：for、if、异步语句等等
 const actions = {
+    // action传入参数有个与store含有相同属性的context对象，可以通过{commit}解构出commit方法
     //获取商品分类的数据
     async getCategory({ commit }) {
         let result = await reqCategoryList();
